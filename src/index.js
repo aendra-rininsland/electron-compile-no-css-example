@@ -1,5 +1,6 @@
 const electron = require('electron');
 const app = electron.app;
+const { join } = require('path');
 
 let mainWindow;
 
@@ -9,8 +10,7 @@ function activate() {
     height: 400,
   });
 
-  win.loadURL(`file://${__dirname}/renderer/index.html`);
-
+  win.loadURL(`file://${join(__dirname, '/index.html')}`);
   win.openDevTools();
 }
 

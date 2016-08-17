@@ -1,0 +1,6 @@
+#should-be-green {
+  margin: 0 auto;
+  width: 5rem;
+  height: 5rem;
+  background: red !important;
+}
